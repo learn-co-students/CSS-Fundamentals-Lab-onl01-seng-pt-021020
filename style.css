@@ -3,3 +3,41 @@ body {
   height: 100%;
   margin: 0;
 }
+
+h1 {text-align: center;} /* aligns the header text in the center */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).*/
+
+nav {text-align:center;}
+
+nav a {
+  padding:10;
+  /*background: #ccc;*/
+}
+
+figcaption {text-align: center;} 
+
+#featured-property p {    
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;     
+}
+/* THis is a class selector. It looks for p elements with the ID attribute featured-property and apply CSS to that*/
+
+footer {
+  text-align: center;  
+  width: 100%;
+
+}
+#details > div {
+  float: left; 
+}
+
+
+
+
