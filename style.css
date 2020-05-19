@@ -4,40 +4,48 @@ body {
   margin: 0;
 }
 
-h1 {text-align: center;} /* aligns the header text in the center */
+h1{
+  text-align: center; /*aligns the header text in the center*/
+}
 
 img {
   display: block;
+  margin: 0 auto;
+}
+
+/* A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).This is the central image, and it's now centered. Could have also written margins like this:
   margin-left: auto;
   margin-right: auto;
-}
-/* A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).*/
+*/
 
-nav {text-align:center;}
+
+nav,
+figcaption {
+  text-align: center;
+}
+/*Let's shrink that font size down and make sure it is centered.*/
 
 nav a {
-  padding:10;
-  /*background: #ccc;*/
+  padding: 0 10px;
+  background-color: grey;
+  margin: 0 auto;
 }
 
-figcaption {text-align: center;} 
+/*Let's center all of our nav links as well. Give all of the <a> tags within our navbar a padding of 10px on their left and right sides. In addition, change their background color to something of your choosing. We chose grey!*/
 
-#featured-property p {    
+#featured-property p {
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;     
-}
-/* THis is a class selector. It looks for p elements with the ID attribute featured-property and apply CSS to that*/
-
-footer {
-  text-align: center;  
-  width: 100%;
-
-}
-#details > div {
-  float: left; 
+  text-align: center;
+  margin: 0 auto;
 }
 
+/*Our image is about 900px wide, so let's give all our <p> within #featured-property a hard width of 800px and center the text in there.*/
 
+#details div{
+  float: left;
+  background-color: red;
+  width: 25%;
+  text-align: center;
+}
 
-
+/*All of them should have the same background color, centered text, and occupy 25% of the width of the bottom row (since we have 4 divs).*/
